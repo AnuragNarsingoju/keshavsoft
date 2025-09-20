@@ -442,19 +442,19 @@ body {
 }
 
 .floating-card i {
-    font-size: 1.25rem;
+    font-size: 1rem;
     color: var(--primary-600);
 }
 
 .card-1 {
     top: 20%;
-    left: -10%;
+    left: 1%;
     animation-delay: 0s;
 }
 
 .card-2 {
     top: 60%;
-    right: -10%;
+    right: 30%;
     animation-delay: 1.5s;
 }
 
