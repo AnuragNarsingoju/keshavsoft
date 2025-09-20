@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - KeshavSoft</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">
+                <i class="bi bi-code-slash me-2"></i>KeshavSoft
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header bg-gradient-primary text-white py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h1 class="display-4 fw-bold mb-3">Contact Us</h1>
+                    <p class="lead">Get in touch with our team for your next project</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <!-- Contact Form -->
+                <div class="col-lg-8 mb-5">
+                    <div class="card border-0 shadow">
+                        <div class="card-body p-5">
+                            <h3 class="card-title mb-4">Send us a Message</h3>
+                            <form id="contactForm" novalidate>
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <label for="firstName" class="form-label">First Name *</label>
+                                        <input type="text" class="form-control" id="firstName" required>
+                                        <div class="invalid-feedback">
+                                            Please provide your first name.
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="lastName" class="form-label">Last Name *</label>
+                                        <input type="text" class="form-control" id="lastName" required>
+                                        <div class="invalid-feedback">
+                                            Please provide your last name.
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="email" class="form-label">Email Address *</label>
+                                        <input type="email" class="form-control" id="email" required>
+                                        <div class="invalid-feedback">
+                                            Please provide a valid email address.
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="phone" class="form-label">Phone Number</label>
+                                        <input type="tel" class="form-control" id="phone">
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="company" class="form-label">Company</label>
+                                        <input type="text" class="form-control" id="company">
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="service" class="form-label">Service Interested In</label>
+                                        <select class="form-select" id="service">
+                                            <option value="">Select a service</option>
+                                            <option value="web-development">Web Development</option>
+                                            <option value="mobile-apps">Mobile Apps</option>
+                                            <option value="cloud-solutions">Cloud Solutions</option>
+                                            <option value="consulting">Consulting</option>
+                                            <option value="other">Other</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="budget" class="form-label">Project Budget</label>
+                                        <select class="form-select" id="budget">
+                                            <option value="">Select budget range</option>
+                                            <option value="under-10k">Under $10,000</option>
+                                            <option value="10k-25k">$10,000 - $25,000</option>
+                                            <option value="25k-50k">$25,000 - $50,000</option>
+                                            <option value="50k-100k">$50,000 - $100,000</option>
+                                            <option value="over-100k">Over $100,000</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="message" class="form-label">Message *</label>
+                                        <textarea class="form-control" id="message" rows="5" required placeholder="Tell us about your project requirements..."></textarea>
+                                        <div class="invalid-feedback">
+                                            Please provide a message.
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="newsletter">
+                                            <label class="form-check-label" for="newsletter">
+                                                Subscribe to our newsletter for updates and insights
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <button type="submit" class="btn btn-primary btn-lg px-5">
+                                            <i class="bi bi-send me-2"></i>Send Message
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="col-lg-4">
+                    <div class="card border-0 shadow h-100">
+                        <div class="card-body p-5">
+                            <h4 class="card-title mb-4">Get in Touch</h4>
+                            
+                            <div class="contact-item mb-4">
+                                <div class="d-flex align-items-start">
+                                    <div class="contact-icon bg-primary text-white rounded-circle d-flex align-items-center justify-content-center me-3" style="width: 50px; height: 50px;">
+                                        <i class="bi bi-geo-alt"></i>
+                                    </div>
+                                    <div>
+                                        <h6 class="mb-1">Address</h6>
+                                        <p class="text-muted mb-0">123 Tech Street<br>Innovation City, IC 12345</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="contact-item mb-4">
+                                <div class="d-flex align-items-start">
+                                    <div class="contact-icon bg-success text-white rounded-circle d-flex align-items-center justify-content-center me-3" style="width: 50px; height: 50px;">
+                                        <i class="bi bi-telephone"></i>
+                                    </div>
+                                    <div>
+                                        <h6 class="mb-1">Phone</h6>
+                                        <p class="text-muted mb-0">+1 (555) 123-4567<br>Mon-Fri 9AM-6PM</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="contact-item mb-4">
+                                <div class="d-flex align-items-start">
+                                    <div class="contact-icon bg-warning text-white rounded-circle d-flex align-items-center justify-content-center me-3" style="width: 50px; height: 50px;">
+                                        <i class="bi bi-envelope"></i>
+                                    </div>
+                                    <div>
+                                        <h6 class="mb-1">Email</h6>
+                                        <p class="text-muted mb-0">info@keshavsoft.com<br>support@keshavsoft.com</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="contact-item mb-4">
+                                <div class="d-flex align-items-start">
+                                    <div class="contact-icon bg-info text-white rounded-circle d-flex align-items-center justify-content-center me-3" style="width: 50px; height: 50px;">
+                                        <i class="bi bi-clock"></i>
+                                    </div>
+                                    <div>
+                                        <h6 class="mb-1">Business Hours</h6>
+                                        <p class="text-muted mb-0">Monday - Friday: 9:00 AM - 6:00 PM<br>Saturday: 10:00 AM - 4:00 PM</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <hr class="my-4">
+
+                            <h6 class="mb-3">Follow Us</h6>
+                            <div class="d-flex gap-3">
+                                <a href="#" class="btn btn-outline-primary btn-sm">
+                                    <i class="bi bi-facebook"></i>
+                                </a>
+                                <a href="#" class="btn btn-outline-info btn-sm">
+                                    <i class="bi bi-twitter"></i>
+                                </a>
+                                <a href="#" class="btn btn-outline-primary btn-sm">
+                                    <i class="bi bi-linkedin"></i>
+                                </a>
+                                <a href="#" class="btn btn-outline-dark btn-sm">
+                                    <i class="bi bi-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="bg-light py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <h2 class="text-center mb-5">Frequently Asked Questions</h2>
+                    <div class="accordion" id="faqAccordion">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="faq1">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1">
+                                    What is your typical project timeline?
+                                </button>
+                            </h2>
+                            <div id="collapse1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Project timelines vary depending on complexity and scope. Simple websites typically take 2-4 weeks, while complex applications can take 3-6 months. We provide detailed timelines during our initial consultation.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="faq2">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2">
+                                    Do you provide ongoing support and maintenance?
+                                </button>
+                            </h2>
+                            <div id="collapse2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Yes, we offer comprehensive support and maintenance packages. This includes regular updates, security patches, performance monitoring, and technical support to ensure your application runs smoothly.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="faq3">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3">
+                                    What technologies do you specialize in?
+                                </button>
+                            </h2>
+                            <div id="collapse3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    We specialize in modern web technologies including React, Node.js, Python, JavaScript, HTML5, CSS3, Bootstrap, MongoDB, PostgreSQL, and cloud platforms like AWS and Azure.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="faq4">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4">
+                                    How do you ensure project quality?
+                                </button>
+                            </h2>
+                            <div id="collapse4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    We follow industry best practices including code reviews, automated testing, continuous integration, and regular client feedback sessions. Our quality assurance process ensures reliable, scalable, and maintainable solutions.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <h5 class="fw-bold mb-3">
+                        <i class="bi bi-code-slash me-2"></i>KeshavSoft
+                    </h5>
+                    <p class="text-muted">Creating innovative software solutions that drive business growth and digital transformation.</p>
+                    <div class="d-flex gap-3">
+                        <a href="#" class="text-white"><i class="bi bi-facebook fs-5"></i></a>
+                        <a href="#" class="text-white"><i class="bi bi-twitter fs-5"></i></a>
+                        <a href="#" class="text-white"><i class="bi bi-linkedin fs-5"></i></a>
+                        <a href="#" class="text-white"><i class="bi bi-github fs-5"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h6 class="fw-bold mb-3">Services</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-muted text-decoration-none">Web Development</a></li>
+                        <li><a href="#" class="text-muted text-decoration-none">Mobile Apps</a></li>
+                        <li><a href="#" class="text-muted text-decoration-none">Cloud Solutions</a></li>
+                        <li><a href="#" class="text-muted text-decoration-none">Consulting</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h6 class="fw-bold mb-3">Company</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="about.html" class="text-muted text-decoration-none">About Us</a></li>
+                        <li><a href="#" class="text-muted text-decoration-none">Our Team</a></li>
+                        <li><a href="#" class="text-muted text-decoration-none">Careers</a></li>
+                        <li><a href="#" class="text-muted text-decoration-none">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <h6 class="fw-bold mb-3">Contact Info</h6>
+                    <ul class="list-unstyled text-muted">
+                        <li class="mb-2"><i class="bi bi-geo-alt me-2"></i>123 Tech Street, Innovation City</li>
+                        <li class="mb-2"><i class="bi bi-telephone me-2"></i>+1 (555) 123-4567</li>
+                        <li class="mb-2"><i class="bi bi-envelope me-2"></i>info@keshavsoft.com</li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="text-muted mb-0">&copy; 2024 KeshavSoft. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="#" class="text-muted text-decoration-none me-3">Privacy Policy</a>
+                    <a href="#" class="text-muted text-decoration-none">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Contact Form Validation -->
+    <script>
+        // Form validation
+        (function() {
+            'use strict';
+            window.addEventListener('load', function() {
+                var forms = document.getElementsByClassName('needs-validation');
+                var validation = Array.prototype.filter.call(forms, function(form) {
+                    form.addEventListener('submit', function(event) {
+                        if (form.checkValidity() === false) {
+                            event.preventDefault();
+                            event.stopPropagation();
+                        }
+                        form.classList.add('was-validated');
+                    }, false);
+                });
+            }, false);
+        })();
+
+        // Contact form submission
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Get form data
+            const formData = new FormData(this);
+            const data = Object.fromEntries(formData);
+            
+            // Simulate form submission
+            const submitBtn = this.querySelector('button[type="submit"]');
+            const originalText = submitBtn.innerHTML;
+            
+            submitBtn.innerHTML = '<i class="bi bi-hourglass-split me-2"></i>Sending...';
+            submitBtn.disabled = true;
+            
+            setTimeout(() => {
+                // Show success message
+                alert('Thank you for your message! We will get back to you soon.');
+                
+                // Reset form
+                this.reset();
+                this.classList.remove('was-validated');
+                
+                // Reset button
+                submitBtn.innerHTML = originalText;
+                submitBtn.disabled = false;
+            }, 2000);
+        });
+    </script>
+</body>
+</html>
